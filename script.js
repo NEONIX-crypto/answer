@@ -166,7 +166,7 @@ function goToPage5() {
 function checkFinalAnswer() {
     const input = document.getElementById("finalAnswer").value.trim().toLowerCase();
 
-    if (input === "answer") {
+    if (input === "?") {
         showCustomAlert("Correct! Proceeding to the next page...");
 
         // Удаляем содержимое страницы 5
