@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>?</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Первая страница -->
+    <div id="page1" class="page active">
+        <div id="question" onclick="breakPage()">?</div>
+    </div>
+
+    <!-- Вторая страница -->
+    <div id="page2" class="page hidden">
+        <div class="matrix-effect"></div>
+        <div class="cipher">zpvs njoe</div>
+        <input type="text" id="answer1" placeholder="Enter your answer">
+        <button onclick="checkAnswer1()">Submit</button>
+    </div>
+
+    <!-- Третья страница -->
+    <div id="page3" class="page hidden">
+        <div class="glitch">
+            <a id="download" href="2.zip" download="2.zip">Download</a>
+        </div>
+        <input type="text" id="answer2" placeholder="Enter your answer">
+        <button onclick="checkAnswer2()">Submit</button>
+    </div>
+
+    <!-- Четвертая страница -->
+    <div id="page4" class="page hidden">
+        <div id="countdown" class="rainbow-text">01:00</div>
+        <button id="next-page-button" class="hidden" onclick="goToPage5()">Go to next page</button>
+    </div>
+
+    <!-- Пятая страница -->
+    <div id="page5" class="page hidden">
+        <img id="glitchImage" src="photo.png" alt="Shaky Image">
+        <div class="question">What ticker?</div>
+        <input type="text" id="finalAnswer" placeholder="Enter your answer">
+        <button onclick="checkFinalAnswer()">Submit</button>
+    </div>
+    <!-- Шестая страница -->
+    <div id="page6" class="page hidden">
+        <div id="rotatingText">31.12.2024</div>
+        <button id="nextPageButton6" class="hidden" onclick="checkDateAndProceed()">Next</button>
+    </div>
+
+    <!-- Седьмая страница -->
+    <div id="page7" class="page hidden">
+        <h1>Поздравляем! Вы достигли финальной страницы!</h1>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
